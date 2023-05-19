@@ -1,8 +1,25 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Golos Text', sans-serif;
+}
+
+:root{
+    --primary-100:#c01616;
+    --primary-200:#fa5440;
+    --primary-300:#ffbb9a;
+    --accent-100:#c22020;
+    --accent-200:#ffc0a5;
+    --text-100:#787878;
+    --text-200:#a7a7a7;
+    --bg-100:#000000;
+    --bg-200:#161616;
+    --bg-300:#2c2c2c;
+}
+
+a{
     text-decoration: none;
 }
 
@@ -26,7 +43,7 @@ body{
     justify-content: space-between;
     padding: 2rem;
     font-size: 1.5rem;
-    color: #a7a7a7;
+    color: var(--text-200);
 }
 
 .barra-nav ul{
@@ -39,7 +56,7 @@ body{
 }
 
 .barra-nav ul li a{
-    color: #a7a7a7;
+    color: var(--text-200);
     transition: color .3s ease;
 }
 
@@ -63,16 +80,16 @@ body{
     font-size: 5rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #c22020;
+    color: var( --accent-100);
     letter-spacing:0.2rem
 }
 
 .header__principal span{
-    color: #787878;
+    color: var(--text-100);
 }
 
 .header__principal p{
-    color: #787878;
+    color: var(--text-100);
     font-size: 1.5rem;
     width: 50%;
     line-height: 3rem;
@@ -84,7 +101,7 @@ body{
     width: fit-content;
     text-transform: uppercase;
     border: none;
-    background-color: #c01616;
+    background-color: var(--primary-100);
     font-weight: 700;
     font-size: 1.3rem;
     border-radius: 1.3rem;
@@ -159,7 +176,7 @@ main{
     height: 500px;
     width: 400px;
     padding: 2rem;
-    background-color: #c01616;
+    background-color: var(--primary-100);
     border-radius: 10px;
 }
 
@@ -168,7 +185,7 @@ main{
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    color: #c01616;
+    color: var(--primary-100);
 }
 
 .planes__card figure p{
@@ -217,8 +234,13 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
-    color: #a7a7a7;
+    color: var(--text-200);
     margin-top:5rem;
+}
+
+.p__footer{
+ color: var(--text-200);
+
 }
 
 .redes{
@@ -227,12 +249,12 @@ main{
 }
 
 .redes svg{
-    color: #c01616;
+    color: var(--primary-100);
     transition: color .3s ease;
 }
 
 .redes svg:hover{
-    color: #e92a2a;
+    color: var( --accent-100);
 }
 
 
@@ -253,7 +275,7 @@ main{
 .coach h1{
     margin-top: 5rem;
     font-size: 5rem;
-    color: #787878;
+    color: var(--text-100);
     margin-left: 5rem;
 }
 
@@ -285,11 +307,11 @@ main{
 }
 
 .cards h3{
-    color: #c22020;
+    color: var( --accent-100);
 }
 
 .cards p{
-    color: #787878;
+    color: var(--text-100)
 }
 
 /*CONTACTO*/
@@ -303,37 +325,11 @@ main{
     gap: 5rem;
 }
 .contenedor__contacto h1{
-    margin-top: 5rem;
-    font-size: 5rem;
-    color: #787878;
-    margin-left: 5rem;
-    align-self: flex-start;
-}
-
-.formulario{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    gap: 2rem;
-}
-
-.formulario img{
-    max-width: 20%;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center center;
-}
-
-.formulario form{
-    display: flex;
-    gap: 2.3rem;
-    width: 30%;
-    flex-direction: column;
+    color: var(--text-100);
 }
 
 .formulario form label{
-    color: #787878;
+    color: var(--text-100);
     font-size: 1.3rem;
 }
 
@@ -343,7 +339,7 @@ main{
 
 .formulario form input[type="submit"]{
     border: none;
-    background-color: #c22020;
+    background-color: var( --accent-100);
     font-size: 1.3rem;
     align-self: flex-end;
     padding: 0.6rem 1.6rem;
@@ -369,13 +365,13 @@ main{
     margin-top: 5rem;
     font-size: 5rem;
     font-weight: 700;
-    color: #787878;
+    color: var(--text-100);
     margin-left: 5rem;
     align-self: flex-start;
 }
 
 .planes p{
-    color: #787878;
+    color: var(--text-100);
     font-size: 1.3rem;
     margin-top: 1.5rem;
     text-align: center;
@@ -399,7 +395,7 @@ main{
     margin-top: 5rem;
     font-size: 5rem;
     font-weight: 700;
-    color: #787878;
+    color: var(--text-100);
     margin-left: 5rem;
     align-self: flex-start;
 }
@@ -416,7 +412,7 @@ main{
 .servicios__horario h2, 
 .servicios__suplementacion h2,
 .servicios__testimonios h2{
-    color: #787878;
+    color: var(--text-100);
     font-size: 2.5rem;
     text-align: center;
 }
@@ -427,21 +423,21 @@ main{
     text-align:center;
     width: 700px;
     font-size: 1.3rem;
-    color: #a7a7a7;
+    color: var(--text-200);
 }
 
 .servicios__suplementacion{
     padding: 4rem;
 }
 
-.servicios__suplementacion .card{
+.servicios__suplementacion .cards{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     place-items: center;
     margin-top: 4rem;
 }
 
-.card .card__suplementacion{
+.cards .card__suplementacion{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -452,30 +448,30 @@ main{
     width: 400px;
 }
 
-.card .card__suplementacion figcaption{
+.cards .card__suplementacion figcaption{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    color: #c01616;
+    color: var(--primary-100);
 }
 
-.card .card__suplementacion p{
+.cards .card__suplementacion p{
     color: lightgrey;
     line-height: 1.5rem;
     font-size: 1.3rem;
     text-align: center;
 }
 
-.card .card__suplementacion:nth-child(1){
+.cards .card__suplementacion:nth-child(1){
     background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .7)), url(/img/suplementacion1.webp) no-repeat center;
     background-size: cover;
 }
-.card .card__suplementacion:nth-child(2){
+.cards .card__suplementacion:nth-child(2){
     background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .7)), url(/img/suplementacion2.webp) no-repeat center;
     background-size: cover;
 }
-.card .card__suplementacion:nth-child(3){
+.cards .card__suplementacion:nth-child(3){
     background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .7)), url(/img/suplementacion3.webp) no-repeat center;
     background-size: cover;
 }
@@ -496,7 +492,7 @@ main{
     padding: 1.5rem;
     flex-direction: column;
     gap: 1.5rem;
-    border: #c22020 solid 1px;
+    border: var( --accent-100) solid 1px;
     border-radius: 5px;
 }
 
@@ -513,11 +509,11 @@ main{
 }
 
 .testimonios__card figcaption{
-    color: #c22020;
+    color: var( --accent-100);
     font-weight: 700;
     font-size: 1.3rem;
 }
 
 .testimonios__card p{
-    color: #a7a7a7;
+    color: var(--text-200);
 }
