@@ -272,6 +272,12 @@ main{
     padding: 0.5rem;
 }
 
+.img-responsive{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .formulario form input[type="submit"]{
     border: none;
     background-color: var( --accent-100);
