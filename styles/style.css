@@ -33,11 +33,6 @@ a{
     color: var(--text-100);
 }
 
-@media(min-width:756px){
-    .heading{
-        font-size: 5rem;
-    }
-}
 
 /*Header*/
 
@@ -447,4 +442,10 @@ main{
 
 .testimonios__card p{
     color: var(--text-200);
+}
+
+@media(min-width:756px){
+    .heading{
+        font-size: 5rem;
+    }
 }
