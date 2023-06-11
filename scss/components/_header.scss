@@ -1,0 +1,58 @@
+.header__contenedor {
+	min-height: 100vh;
+	background: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(../../img/fondo.webp) no-repeat center;
+	background-size: cover;
+	box-shadow: -1px 2px 16px 0px #010101;
+}
+.navbar-nav {
+	gap: 1.2rem;
+}
+.nav-item {
+	font-size: 1.4rem;
+}
+
+.header__principal {
+	width: 80%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 4rem;
+	gap: 4rem;
+	h1 {
+		font-size: 5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $accent-100;
+		letter-spacing: 0.2rem;
+	}
+	span {
+		color: $text-100;
+	}
+	p {
+		color: $text-100;
+		font-size: 1.5rem;
+		width: 50%;
+		line-height: 3rem;
+	}
+	button {
+		padding: 1rem 2rem;
+		width: fit-content;
+		text-transform: uppercase;
+		border: none;
+		background-color: $primary-100;
+		font-weight: 700;
+		font-size: 1.3rem;
+		border-radius: 1.3rem;
+		letter-spacing: 0.2rem;
+		transition: opacity .3s ease;
+		&:hover {
+			cursor: pointer;
+			opacity: .8;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: lightgrey;
+	}
+}

@@ -1,0 +1,16 @@
+.redes{
+    display: flex;
+    gap: 1.5rem;
+
+    svg{
+        color: $primary-100;
+        transition: color .3s ease;
+    }
+    svg:hover{
+        color: $accent-100;
+    }
+}
+
+.p__footer{
+    color: $text-200;
+}

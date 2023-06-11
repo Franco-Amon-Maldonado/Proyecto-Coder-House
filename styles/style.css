@@ -215,14 +215,7 @@ main{
 }
 
 /*FOOTER*/
-.contenedor__footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    color: var(--text-200);
-    margin-top:5rem;
-}
+
 
 .p__footer{
  color: var(--text-200);
@@ -243,11 +236,6 @@ main{
     color: var( --accent-100);
 }
 
-
-.contenedor__footer .footer__contacto p:first-child{
-    margin-bottom: 1rem;
-    font-size:1.3rem;
-}
 
 /*Nosotros*/
 
