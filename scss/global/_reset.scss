@@ -9,6 +9,9 @@
     font-size: 2rem;
     font-weight: 700;
     color: $text-100;
+    @include tablet{
+        font-size: 5rem;
+    }
 }
 
 body{

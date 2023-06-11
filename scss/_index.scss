@@ -1,0 +1,60 @@
+.planes{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        text-align: center;
+        color: lightgrey;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        font-weight: 400;
+    }
+}
+
+.planes__card{
+    display: flex;
+    margin-top: 7rem;
+    justify-content: space-around;
+    text-align: center;
+
+    figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        height: 500px;
+        width: 400px;
+        padding: 2rem;
+        background-color: $primary-100;
+        border-radius: 10px;
+
+        .plan1{
+            background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .7)), url(../../img/fondoPlan1.webp) no-repeat center;
+            background-size: cover;
+        }
+
+        .plan2{
+            background: linear-gradient(to right, rgb(0 0 0 / .6), rgb(0 0 0 / .7)), url(../../img/fondoPlan2.webp) no-repeat center;
+            background-size: cover;
+        }
+
+        
+
+        figcaption{
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            color: $primary-100;
+        }
+
+        p{
+            color: lightgrey;
+        }
+
+        button{
+            align-self: center;
+        }
+    }
+
+}

@@ -10,6 +10,11 @@
   font-weight: 700;
   color: #787878;
 }
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 5rem;
+  }
+}
 
 body {
   background-color: #2c2c2c;
@@ -21,6 +26,177 @@ a {
 
 main {
   min-height: 100vh;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #787878;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 5rem;
+  }
+}
+
+body {
+  background-color: #2c2c2c;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.contenedor__planes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+.card-button {
+  padding: 1rem 2rem;
+  width: fit-content;
+  text-transform: uppercase;
+  border: none;
+  background-color: #c01616;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 1.3rem;
+  letter-spacing: 0.2rem;
+  transition: opacity 0.3s ease;
+  align-self: center;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.planes {
+  display: flex;
+  flex-direction: column;
+}
+.planes h2 {
+  text-align: center;
+  color: lightgrey;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  font-weight: 400;
+}
+
+.planes__card {
+  display: flex;
+  margin-top: 7rem;
+  justify-content: space-around;
+  text-align: center;
+}
+.planes__card figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 500px;
+  width: 400px;
+  padding: 2rem;
+  background-color: #c01616;
+  border-radius: 10px;
+}
+.planes__card figure .plan1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan1.webp) no-repeat center;
+  background-size: cover;
+}
+.planes__card figure .plan2 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan2.webp) no-repeat center;
+  background-size: cover;
+}
+.planes__card figure figcaption {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #c01616;
+}
+.planes__card figure p {
+  color: lightgrey;
+}
+.planes__card figure button {
+  align-self: center;
+}
+
+.cards h3 {
+  margin-top: 1.4rem;
+  color: #c22020;
+}
+.cards p {
+  color: #787878;
+}
+
+.card__planes {
+  display: flex;
+  flex-direction: column;
+}
+.card__planes .card__planes--titulo {
+  margin-top: 5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #787878;
+  margin-left: 5rem;
+  align-self: flex-start;
+}
+.card__planes p {
+  color: #787878;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.card__planes .planes_info {
+  margin-top: 7rem;
+  text-align: center;
+}
+.card__planes figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 100%;
+  padding: 2rem;
+  background-color: #c01616;
+  border-radius: 10px;
+}
+.card__planes figure figcaption {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #c01616;
+}
+.card__planes figure p {
+  color: lightgrey;
+}
+.card__planes figure button {
+  align-self: center;
+}
+.card__planes .planes_info--selector .plan1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan1.webp) no-repeat center;
+  background-size: cover;
+}
+.card__planes .planes_info--selector .plan2 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan2.webp) no-repeat center;
+  background-size: cover;
+}
+.card__planes .planes_info--selector .plan3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan3.webp) no-repeat center;
+  background-size: cover;
+}
+.card__planes .planes_info--selector .plan4 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan4.webp) no-repeat center;
+  background-size: cover;
 }
 
 .formulario form label {
@@ -50,6 +226,66 @@ main {
   object-position: center;
 }
 
+.header__contenedor {
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/fondo.webp) no-repeat center;
+  background-size: cover;
+  box-shadow: -1px 2px 16px 0px #010101;
+}
+.header__contenedor .header__principal {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+  gap: 4rem;
+}
+.header__contenedor .header__principal h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c22020;
+  letter-spacing: 0.2rem;
+}
+.header__contenedor .header__principal span {
+  color: #787878;
+}
+.header__contenedor .header__principal p {
+  color: #787878;
+  font-size: 1.5rem;
+  width: 50%;
+  line-height: 3rem;
+}
+.header__contenedor .header__principal button {
+  padding: 1rem 2rem;
+  width: fit-content;
+  text-transform: uppercase;
+  border: none;
+  background-color: #c01616;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 1.3rem;
+  letter-spacing: 0.2rem;
+  transition: opacity 0.3s ease;
+}
+.header__contenedor .header__principal button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.header__contenedor .header__principal a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.navbar-nav {
+  gap: 1.2rem;
+}
+
+.nav-item {
+  font-size: 1.4rem;
+}
+
 .redes {
   display: flex;
   gap: 1.5rem;
@@ -64,67 +300,6 @@ main {
 
 .p__footer {
   color: #a7a7a7;
-}
-
-.header__contenedor {
-  min-height: 100vh;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/fondo.webp) no-repeat center;
-  background-size: cover;
-  box-shadow: -1px 2px 16px 0px #010101;
-}
-
-.navbar-nav {
-  gap: 1.2rem;
-}
-
-.nav-item {
-  font-size: 1.4rem;
-}
-
-.header__principal {
-  width: 80%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 4rem;
-  gap: 4rem;
-}
-.header__principal h1 {
-  font-size: 5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #c22020;
-  letter-spacing: 0.2rem;
-}
-.header__principal span {
-  color: #787878;
-}
-.header__principal p {
-  color: #787878;
-  font-size: 1.5rem;
-  width: 50%;
-  line-height: 3rem;
-}
-.header__principal button {
-  padding: 1rem 2rem;
-  width: fit-content;
-  text-transform: uppercase;
-  border: none;
-  background-color: #c01616;
-  font-weight: 700;
-  font-size: 1.3rem;
-  border-radius: 1.3rem;
-  letter-spacing: 0.2rem;
-  transition: opacity 0.3s ease;
-}
-.header__principal button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-.header__principal a {
-  text-decoration: none;
-  color: lightgrey;
 }
 
 /*# sourceMappingURL=main.css.map */
