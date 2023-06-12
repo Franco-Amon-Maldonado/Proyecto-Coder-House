@@ -137,9 +137,65 @@ main {
   color: #787878;
 }
 
+.servicios__horario {
+  padding: 3rem;
+}
+.servicios__horario h2 {
+  color: #787878;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.servicios__horario p {
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #a7a7a7;
+}
+
+.servicios__suplementacion h2 {
+  color: #787878;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.servicios__suplementacion .col figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 4rem;
+  height: 100%;
+  width: 100%;
+}
+.servicios__suplementacion .col figure figcaption {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #c01616;
+}
+.servicios__suplementacion .col figure p {
+  color: lightgrey;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.servicios__suplementacion .col .card__suplementacion-1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/suplementacion1.webp) no-repeat center;
+  background-size: cover;
+}
+.servicios__suplementacion .col .card__suplementacion-2 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/suplementacion2.webp) no-repeat center;
+  background-size: cover;
+}
+.servicios__suplementacion .col .card__suplementacion-3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/suplementacion3.webp) no-repeat center;
+  background-size: cover;
+}
+
 .card__planes {
   display: flex;
   flex-direction: column;
+  padding: 3rem;
 }
 .card__planes .card__planes--titulo {
   margin-top: 5rem;

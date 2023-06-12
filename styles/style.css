@@ -321,12 +321,7 @@ main{
 
 
 .servicios__horario{
-    margin-top: 3rem;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
+    padding: 3rem;
 }
 
 .servicios__horario h2, 
@@ -338,10 +333,8 @@ main{
 }
 
 .servicios__horario p{
-    word-wrap: break-word;
     line-height: 2rem;
     text-align:center;
-    width: 700px;
     font-size: 1.3rem;
     color: var(--text-200);
 }
@@ -380,7 +373,6 @@ main{
     color: lightgrey;
     line-height: 1.5rem;
     font-size: 1.3rem;
-    text-align: center;
 }
 
 .cards .card__suplementacion:nth-child(1){
