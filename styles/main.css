@@ -239,19 +239,19 @@ main {
   align-self: center;
 }
 .card__planes .planes_info--selector .plan1 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan1.webp) no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/fondoPlan1.webp) no-repeat center;
   background-size: cover;
 }
 .card__planes .planes_info--selector .plan2 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan2.webp) no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/fondoPlan2.webp) no-repeat center;
   background-size: cover;
 }
 .card__planes .planes_info--selector .plan3 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan3.webp) no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/fondoPlan3.webp) no-repeat center;
   background-size: cover;
 }
 .card__planes .planes_info--selector .plan4 {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../img/fondoPlan4.webp) no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/fondoPlan4.webp) no-repeat center;
   background-size: cover;
 }
 
