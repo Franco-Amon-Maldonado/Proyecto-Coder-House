@@ -18,10 +18,18 @@ body{
     background-color: $bg-300;
 }
 
+header{
+    padding: 1.2rem 0;
+}
+
 a{
     text-decoration: none;
 }
 
-main{
+.main-border{
+    border-top: 1px solid $text-100;
+}
+
+main, .main-border{
     min-height: 100vh;
 }
