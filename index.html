@@ -14,15 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Valhalla - Inicio</title>
 </head>
 
 <body>
 
-    <header>
-        <section class="header__contenedor">
+    <header class="header__inicio">
 
+        <section class="container-fluid">
             <nav class="navbar navbar-dark p-4 navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand logo" href="./index.html">VALHALLA</a>
@@ -41,10 +41,12 @@
                 </div>
             </nav>
 
-            <div class="header__principal">
-                <h1>Valhalla <span>gym</span></h1>
-                <p>Encuentra tu fuerza interior, desafía tus metas!</p>
-                <button><a href="./pages/planes.html">Planes</a></button>
+            <div class="row header__principal text-center text-md-start p-0 px-md-5">
+                <div class="col d-flex flex-column align-self-center gap-5">
+                    <h1> Valhalla <span>gym</span></h1>
+                    <p>Encuentra tu fuerza interior, desafía tus metas!</p>
+                    <button class="align-self-md-start align-self-center"><a href="./pages/planes.html">Planes</a></button>
+                </div>
             </div>
         </section>
 
@@ -52,47 +54,59 @@
 
     <main>
 
-        <section class="contenedor__planes">
+    <section class="container">
 
+        <div class="row container__planes">
+            <div class="col">
+                <h2> Planes principales</h2>
+            </div>
 
-            <div class="planes">
-                <h2>Planes principales</h2>
-                <div class="planes__card">
-
+            <div class="row row-cols-md-2 row-gap-5 mb-5 planes__card">
+                <div class="col">
                     <figure class="plan1">
-                        <figcaption>Plan</figcaption>
+                        <figcaption>Musculación</figcaption>
                         <p>Entrenamiento personalizado acorde a tus medidas, focalizado en tus metas</p>
-                        <button>Contactar</button>
+                        <button class="card-button">Contactar</button>
                     </figure>
-
+                </div>
+                <div class="col">
                     <figure class="plan2">
-                        <figcaption>Plan</figcaption>
-                        <p>Clases de crossfit. Adentrate a los entrenamientos para la competición</p>
-                        <button>Contactar</button>
+                        <figcaption>Funcional</figcaption>
+                        <p>Clases de Funcional. Adentrate a los entrenamientos para mejorar tus movimientos</p>
+                        <button class="card-button">Contactar</button>
                     </figure>
-
-
                 </div>
             </div>
+        </div>
 
-        </section>
+        
 
-        <section class="contenedor__galeria">
+            <section class="contenedor__galeria mb-5">
+            
+                <h2>Galeria</h2>
 
-            <h2>Galeria</h2>
+                <div class="row row-gap-5 d-flex justify-content-center row-cols-1 row-cols-lg-3 galeria">
+                    <div class="col">
+                        <img src="./img/gym1.webp"class="img-responsive img-fluid" alt="imagen del gym, cliente descansando">
+                    </div>
+                    <div class="col">
+                        <img src="./img/gym2.webp"class="img-responsive img-fluid" alt="imagen del gym, mancuernero">
+                    </div>
+                    <div class="col">
+                        <img src="./img/gym3.webp"class="img-responsive img-fluid" alt="imagen del gym, zona musculacion">
+                    </div>
+                    <div class="col">
+                        <img src="./img/gym4.webp"class="img-responsive img-fluid" alt="imagen del gym, zona musculacion">
+                    </div>
+                    <div class="col">
+                        <img src="./img/gym5.webp"class="img-responsive img-fluid" alt="imagen del gym, zona de cardio">
+                    </div>
+                </div>
 
-            <div class="galeria">
-                <img src="./img/gym1.webp" alt="imagen del gym, cliente descansando">
-                <img src="./img/gym2.webp" alt="imagen del gym, mancuernero">
-                <img src="./img/gym3.webp" alt="imagen del gym, zona musculacion">
-                <img src="./img/gym4.webp" alt="imagen del gym, zona musculacion">
-                <img src="./img/gym5.webp" alt="imagen del gym, zona de cardio">
-            </div>
 
+            </section>
 
-
-        </section>
-
+    </section>
 
     </main>
 

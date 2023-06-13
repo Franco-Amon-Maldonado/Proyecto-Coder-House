@@ -116,7 +116,6 @@ main{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    padding: 4rem;
 }
 
 .planes{
@@ -184,7 +183,6 @@ main{
 
 .contenedor__galeria{
     min-height: 100vh;
-    padding: 4rem;
 }
 
 .contenedor__galeria h2{
@@ -197,10 +195,6 @@ main{
 
 .contenedor__galeria .galeria{
     margin-top: 7rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 400px;
-    gap: 2rem;
 }   
 
 .contenedor__galeria .galeria img{
@@ -208,11 +202,13 @@ main{
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform .3s ease;
 }
 
-.contenedor__galeria .galeria img:nth-child(3){
-    grid-row-start: span 2;
+.contenedor__galeria .galeria img:hover{
+    transform: scale(1.05);
 }
+
 
 /*FOOTER*/
 
