@@ -422,6 +422,10 @@ main {
   color: lightgrey;
 }
 
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
 .navbar-nav {
   gap: 1.2rem;
 }
