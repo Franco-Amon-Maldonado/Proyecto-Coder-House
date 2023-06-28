@@ -87,6 +87,14 @@ main {
   opacity: 0.8;
 }
 
+@keyframes titleHome {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .container__planes {
   display: flex;
   justify-content: center;
@@ -359,14 +367,28 @@ main {
   font-weight: 700;
   color: #c22020;
   letter-spacing: 0.2rem;
+  opacity: 0;
+}
+.header__inicio .header__principal h1 {
+  animation: titleHome 1s ease-in forwards;
 }
 .header__inicio .header__principal span {
   color: #787878;
+  opacity: 0;
+}
+.header__inicio .header__principal span {
+  animation: titleHome 1s ease-in forwards;
+  animation-delay: 0.7s;
 }
 .header__inicio .header__principal p {
   color: #787878;
   font-size: calc((1vw + 1vh) * 1.5);
   line-height: 3rem;
+  opacity: 0;
+}
+.header__inicio .header__principal p {
+  animation: titleHome 1s ease-in forwards;
+  animation-delay: 0.8s;
 }
 .header__inicio .header__principal button {
   padding: 1rem 2rem;
@@ -378,11 +400,16 @@ main {
   font-size: calc((1vw + 1vh) * 1.3);
   border-radius: 1.3rem;
   letter-spacing: 0.2rem;
-  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+.header__inicio .header__principal button {
+  animation: titleHome 1s ease-in forwards;
+  animation-delay: 0.9s;
 }
 .header__inicio .header__principal button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  transform: scale(1.05);
 }
 .header__inicio .header__principal a {
   text-decoration: none;
